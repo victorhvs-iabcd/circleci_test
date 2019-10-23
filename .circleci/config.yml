@@ -27,7 +27,6 @@ jobs:
               --test app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk \
               --device model=Nexus6,version=21,locale=pt_BR,orientation=portrait  \
               --timeout 90s
-              --results-bucket cloud-test-${GOOGLE_PROJECT_ID}
       - run:
           name: Install gsutil dependency and copy test results data
           command: |
