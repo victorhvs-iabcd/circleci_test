@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/circlecitest
     docker:
-      - image: circleci/android:api-29-alpha  # gcloud is baked into this image
+      - image: circleci/android:api-28-alpha  # gcloud is baked into this image
     steps:
       - checkout
       - run:
